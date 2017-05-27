@@ -1,12 +1,8 @@
 <ion-view title="Crear Minga" id="page3">
-  <ion-content padding="true" class="has-header">
+  <ion-content padding="true" style="background: url(img/IvXgIFLtSBews9OIsNQA_depositphotos_100519454-stock-photo-wooden-tiles-texture.jpg) no-repeat center;background-size:cover;" class="has-header">
     <form id="crearMinga-form1" class="list">
       <label class="item item-input" id="crearMinga-input2">
         <span class="input-label">Nombre de la Minga:</span>
-        <input type="text" placeholder="">
-      </label>
-      <label class="item item-input" id="crearMinga-input3">
-        <span class="input-label">¿Cual sera la Recompenza?</span>
         <input type="text" placeholder="">
       </label>
       <ion-toggle toggle-class="toggle-positive" id="crearMinga-toggle3">¿Sera Publica?</ion-toggle>
@@ -20,7 +16,70 @@
           <option>Conocimiento</option>
         </select>
       </label>
+      <label class="item item-select" id="crearMinga-select3">
+        <span class="input-label">Ciudad</span>
+        <select>
+          <option>Quellon</option>
+          <option>Puerto Montt</option>
+          <option>Castro</option>
+        </select>
+      </label>
+      <label class="item item-select" id="crearMinga-select4">
+        <span class="input-label">Cantidad de Personas</span>
+        <select>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>Indefinido</option>
+        </select>
+      </label>
     </form>
-    <a ui-sref="tabsController.detallesDeLaActividad" id="crearMinga-button1" class="button button-positive  button-block">Crear Minga</a>
+    <div class="spacer" style="width: 300px; height: 20px;"></div>
+    <form id="crearMinga-form6" class="list">
+      <div class="item item-body" id="crearMinga-list-item-container10">
+        <div id="crearMinga-markdown19" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;font-size:15px;">
+            <strong>Recompensas</strong> :</p>
+        </div>
+      </div>
+      <ion-checkbox>Vino
+
+        <span class="badge badge-assertive recompensa">
+          <i class="icon ion-ios-wineglass"></i>
+        </span>
+      </ion-checkbox>
+      <ion-checkbox>Cerveza
+
+        <span class="badge badge-assertive recompensa">
+          <i class="icon icon ion-beer"></i>
+        </span>
+      </ion-checkbox>
+      <ion-checkbox>Conversacion
+
+        <span class="badge badge-assertive recompensa">
+          <i class="icon icon ion-ios-people"></i>
+        </span>
+      </ion-checkbox>
+      <ion-checkbox>Conocimiento
+
+        <span class="badge badge-assertive recompensa">
+          <i class="icon icon ion-ios-people"></i>
+        </span>
+      </ion-checkbox>
+      <ion-checkbox>Servicio
+
+        <span class="badge badge-assertive recompensa">
+          <i class="icon ion-help-buoy"></i>
+        </span>
+      </ion-checkbox>
+    </form>
+    <a ui-sref="tabsController.seleccionaAuspicio()" id="crearMinga-button1" style="font-weight:600;" class="button button-balanced button-block icon-right ion-checkmark">Crear Minga</a>
   </ion-content>
 </ion-view>

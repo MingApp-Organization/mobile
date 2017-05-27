@@ -8,7 +8,6 @@ angular.module('app.routes', ['ionicUIRouter'])
   // Each state's controller can be found in controllers.js
   $stateProvider
     
-  
 
       .state('tabsController.mingasCercanasParticipa', {
     url: '/page2',
@@ -85,38 +84,39 @@ angular.module('app.routes', ['ionicUIRouter'])
     controller: 'registrarseCtrl'
   })
 
-  .state('tabsController.premios', {
+  .state('tabsController.auspiciarMingas', {
     url: '/page10',
     views: {
       'tab4': {
-        templateUrl: 'templates/premios.html',
-        controller: 'premiosCtrl'
+        templateUrl: 'templates/auspiciarMingas.html',
+        controller: 'auspiciarMingasCtrl'
       }
     }
   })
 
-  .state('tabsController.detallesDelPremio', {
+  .state('detallesDelPremio', {
     url: '/page11',
-    views: {
-      'tab4': {
-        templateUrl: 'templates/detallesDelPremio.html',
-        controller: 'detallesDelPremioCtrl'
-      }
-    }
+    templateUrl: 'templates/detallesDelPremio.html',
+    controller: 'detallesDelPremioCtrl'
   })
 
-  .state('tabsController.premiarALaComunidad', {
+  .state('premiarALaComunidad', {
     url: '/page12',
+    templateUrl: 'templates/premiarALaComunidad.html',
+    controller: 'premiarALaComunidadCtrl'
+  })
+
+  .state('tabsController.seleccionaAuspicio', {
+    url: '/page14',
     views: {
-      'tab4': {
-        templateUrl: 'templates/premiarALaComunidad.html',
-        controller: 'premiarALaComunidadCtrl'
+      'tab2': {
+        templateUrl: 'templates/seleccionaAuspicio.html',
+        controller: 'seleccionaAuspicioCtrl'
       }
     }
   })
 
 $urlRouterProvider.otherwise('/page1/page2')
 
-  
 
 });
