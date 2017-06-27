@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Mingas Cercanas</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Mingas Cercanas Participa!</h2>
+
+<!--
+<ion-content>
+  <ion-list>
+    <ion-item item-type="item-avatar"  *ngFor="let post of posts">
+      <img [src]="post.data.url" />
+      <p>{{post.data.author}}<p>
+
+      <p>{{post.data.author}}<p>
+    </ion-item>
+  </ion-list>
+</ion-content>-->
+
+<ion-list>
+  <ion-item *ngFor="let post of posts">
+    <ion-thumbnail item-start>
+   <img [src]="post.data.url" />
+    </ion-thumbnail>
+    <h2>{{post.data.author}}</h2>
+    <h3>{{post.data.author}}</h3>
+    <p>{{post.data.author}}   
+    </p>
+
+    <!--Aqui falta hacer un NG repeat por N
+    donde N es la cantidad de recompensas asociadas a la minga
+    
+     -->
+    <p><ion-badge item-end>30<ion-icon name="contacts"></ion-icon></ion-badge>
+      <ion-badge color="danger" item-end><ion-icon name="beer"></ion-icon></ion-badge>
+      <ion-badge color="danger" item-end><ion-icon name="pizza"></ion-icon></ion-badge>
+    </p>
+    
+  </ion-item>
+</ion-list>
+
+
+
+
+
+
+  <ion-item item-type="item-avatar"  *ngFor="let post of posts">
+    <ion-avatar item-start>
+       <img [src]="post.data.url" />
+    </ion-avatar>
+    <h2>{{post.data.author}}</h2>
+    <p>{{post.data.author}}</p>
+  </ion-item>
+
+ 
+
+  <p>
+    This starter project comes with simple tabs-based layout for apps
+    that are going to primarily use a Tabbed UI.
+  </p>
+  <p>
+    Take a look at the <code>src/pages/</code> directory to add or change tabs,
+    update any existing page or create new pages.
+  </p>
+</ion-content>
